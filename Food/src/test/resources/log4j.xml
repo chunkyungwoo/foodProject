@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.callor.iolist">
+	<logger name="com.callor.food">
 		<level value="info" />
 	</logger>
 	

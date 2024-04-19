@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+nav.main {
+  background-color: blue;
+  color: white;
+  padding: 0.5rem;
+  ul {
+    list-style: none;
+    display: flex;
+    white-space: nowrap;
+  }
+}
+nav.main li {
+  margin: 5px;
+  padding: 1rem 2rem 0;
+  border-bottom: 2px solid transparent;
+  transition: 0.7s;
+  transition: box-shadow 3s;
+}
+
+nav.main li:hover {
+  background-color: green;
+  cursor: pointer;
+  box-shadow: inset 500px 0 0 #000;
+}
+nav.main li.active {
+  background-color: aquamarine;
+}

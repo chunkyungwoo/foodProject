@@ -7,17 +7,15 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Setter
 @Getter
+@Setter
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class FoodVO {
+public class RoleVO {
 	
-	private String f_code;
-	private String f_sort;
-	private String f_foodname;
-
+	private String r_mid;
+	private String r_role;
 
 }
