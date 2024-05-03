@@ -9,11 +9,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="${rootPath}/static/css/join.css?2024-04-18-001" >
+<link rel="stylesheet" href="${rootPath}/static/css/join.css?2024-04-18-007" >
 <script>
 	const rootPath = "${rootPath}"
 </script>
-<script src="${rootPath}/static/js/user.js?2024-04-18-008"></script>
+<script src="${rootPath}/static/js/user.js?2024-04-18-007"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>

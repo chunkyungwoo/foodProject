@@ -99,6 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const selectedOptions = f_foodname.selectedOptions;
+    console.log("옵션:", selectedOptions);
     if (selectedOptions.length === 0) {
       alert("음식취향을 선택하세요.");
       return false;
