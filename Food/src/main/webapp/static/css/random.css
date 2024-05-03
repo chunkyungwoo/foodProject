@@ -1,0 +1,154 @@
+@charset "UTF-8";
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.roulette-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.roulette {
+  position: relative;
+  width: 500px; /* 도넛 모양을 만들기 위한 가로 길이 */
+  height: 500px; /* 도넛 모양을 만들기 위한 세로 길이 */
+  margin: 0 auto;
+  border-radius: 50%; /* 원을 도넛 모양으로 만듭니다. */
+  border: 2px solid blue;
+  overflow: hidden; /* 내부의 요소들이 도넛 모양에 맞게 표시되도록 합니다. */
+}
+.arrow-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow {
+  position: absolute;
+  top: calc(
+    50% - 100px
+  ); /* 도넛의 중심에서 화살표가 위치하도록 조정합니다. */
+  left: 50%; /* 도넛의 중심에서 화살표가 위치하도록 조정합니다. */
+  width: 2px;
+  height: 100px;
+  background-color: red;
+  transform-origin: center bottom;
+  animation: spin 5s infinite linear;
+}
+
+.food-list {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  /*width: 500px;*/ /* 원의 지름과 같게 조정 */
+  /*height: 500px;*/ /* 원의 지름과 같게 조정 */
+  /*border-radius: 50%;*/ /* 원 모양으로 만들기 위해 추가 */
+  /*overflow: hidden;*/ /* 넘치는 부분은 숨기기 위해 추가 */
+}
+
+.food-list li {
+  border: 1px solid black;
+  position: absolute;
+  /*width: calc(500px / 10); /* 각 항목의 너비 */
+  /*height: calc(500px / 10); /* 각 항목의 높이 */
+  width: 150px; /* 각 항목의 너비 */
+  height: 150px; /* 각 항목의 높이 */
+  text-align: center;
+  line-height: 120px; /* 텍스트를 가운데 정렬 */
+  font-size: 16px;
+  /* border-radius: 50%; */
+  transform-origin: center center; /* 회전 축을 가운데로 조정 */
+}
+
+/* 각 항목의 위치를 조정합니다. */
+.food-list li:nth-child(1) {
+  transform: rotate(100deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
+}
+
+.food-list li:nth-child(2) {
+  transform: rotate(150deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
+}
+
+.food-list li:nth-child(3) {
+  transform: rotate(200deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
+}
+
+.food-list li:nth-child(4) {
+  transform: rotate(250deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
+}
+
+.food-list li:nth-child(5) {
+  transform: rotate(300deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
+}
+
+.food-list li:nth-child(6) {
+  transform: rotate(350deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
+}
+
+.food-list li:nth-child(7) {
+  transform: rotate(400deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
+}
+
+/* 원 안에 칸을 만들어 배치하기 위한 추가 스타일 */
+.food-cell {
+  position: absolute;
+  width: 120px; /* 각 칸의 너비 조정 */
+  height: 120px; /* 각 칸의 높이 조정 */
+  border-radius: 50%;
+  /* overflow: hidden; */
+  text-align: center;
+  line-height: 120px; /* 텍스트를 칸의 중앙에 정렬 */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#foodList {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+* {
+  font-family: Pretendard;
+  box-sizing: border-box; /* 모든 요소의 box-sizing을 변경하여 요소의 크기 계산을 편리하게 합니다. */
+}
+
+body {
+  background: #f7f8fc;
+  height: 100vh; /* 뷰포트의 높이를 100%로 설정하여 화면 전체를 차지하도록 합니다. */
+  margin: 0;
+}

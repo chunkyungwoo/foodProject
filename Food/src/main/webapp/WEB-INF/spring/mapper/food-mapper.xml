@@ -5,8 +5,19 @@
   
  <mapper namespace="com.callor.food.persistance.FoodDao">
  
- 	
+ 	<select id="selectAll">
+ 		SELECT * FROM tbl_food
+ 	</select>
+ 	<select id="findById">
+ 		SELECT * FROM tbl_food WHERE f_sort = #{f_sort}
+ 	</select>
  	<update id="update"></update>
  	<delete id="delete"></delete>
+ 	
+ 	<select id="create_table">
+ 		f_code	BIGINT auto_increment	PRIMARY KEY,
+		f_sort	VARCHAR(50)		,
+		f_foodname	VARCHAR(50)
+ 	</select>
  
  </mapper> 

@@ -18,9 +18,9 @@
 				default-target-url="/"
 			/>
 			<sec:logout 
-				logout-url="/user/logout"
-				logout-success-url="/"
 				invalidate-session="true"
+				logout-success-url="/"
+				logout-url="/user/logout"
 			/>
 		
 		
