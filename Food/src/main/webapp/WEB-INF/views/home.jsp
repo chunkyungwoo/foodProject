@@ -13,7 +13,7 @@
 <body>
 	<nav class="main">
 		<ul>
-			<li><a href="${rootPath}/random">랜덤돌리기</a></li>
+			<li><a href="${rootPath}/food/random">랜덤돌리기</a></li>
 			<li><a href="${rootPath}/user/login">로그인</a></li>
 			<li><a href="${rootPath}/user/join">회원가입</a>
 			<sec:authorize access="isAuthenticated()">
