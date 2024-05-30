@@ -11,7 +11,7 @@ public interface FoodDao {
 
 	public List<FoodVO> selectAll();
 
-	public FoodVO findById(String f_sort);
+	public List<FoodVO> findById(String f_sort);
 	
 
 

@@ -1,9 +1,14 @@
 package com.callor.food.service.impl;
 
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
 import com.callor.food.models.FoodVO;
 import com.callor.food.persistance.FoodDao;
 import com.callor.food.service.RandomService;
 
+@Service
 public class RandomServiceImpl implements RandomService{
 	
 	private final FoodDao foodDao;
@@ -18,7 +23,7 @@ public class RandomServiceImpl implements RandomService{
 	}
 
 	@Override
-	public FoodVO findById(String f_sort) {
+	public List<FoodVO> findById(String f_sort) {
 		// TODO Auto-generated method stub
 		return foodDao.findById(f_sort);
 	}

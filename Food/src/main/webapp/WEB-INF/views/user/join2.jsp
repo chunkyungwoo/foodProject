@@ -19,15 +19,15 @@
 <body>
 	<h1>회원가입</h1>
 	<f:form class="join" method="POST">
-		<div><input placeholder="ID" name="m_id" value="test1234"></div>
-		<div><input placeholder="PASSWORD" name="m_password" value="12345678"></div>
-		<div><input placeholder="RE PASSWORD" name="re_password" value="12345678"></div>
-		<div><input placeholder="EMAIL" name="m_email" value="aa"></div>
-		<div><input placeholder="NAME" name="m_name" value="bb"></div>
-		<div><input placeholder="TEL" name="m_tel" value="01012341234"></div>
+		<div><input placeholder="ID" name="m_id"></div>
+		<div><input placeholder="PASSWORD" name="m_password"></div>
+		<div><input placeholder="RE PASSWORD" name="re_password"></div>
+		<div><input placeholder="EMAIL" name="m_email"></div>
+		<div><input placeholder="NAME" name="m_name"></div>
+		<div><input placeholder="TEL" name="m_tel"></div>
 		<div class="foodcontainer">
 			<select name="f_foodname" id="food" multiple size="2"></select>
-			<input type="hidden" name="selected_food" id="selected_food">
+			<input type="hidden" name="selected_food">
 		</div>
 		<div><button type="button">회원가입</button></div>
 		<a href="${rootPath}/user/login">로그인</a>

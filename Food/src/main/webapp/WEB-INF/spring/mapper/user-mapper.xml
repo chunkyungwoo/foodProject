@@ -9,6 +9,10 @@
  		INSERT INTO tbl_user(m_id,m_password,m_email,m_name,m_tel)
  		VALUES(#{m_id},#{m_password},#{m_email},#{m_name},#{m_tel})
  	</insert>
+ 	<insert id="insertFoodUser">
+ 		INSERT INTO tbl_fooduser(f_fcode, f_fuserid)
+ 		VALUES(#{f_fcode},#{f_fuserid})
+ 	</insert>
  	<update id="update"></update>
  	<delete id="delete"></delete>
  	

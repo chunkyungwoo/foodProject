@@ -8,12 +8,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script src="${rootPath}/static/js/random.js?2024-04-26-002"></script>
+<script type="text/javascript">
+	const rootPath = "${rootPath}"
+</script>
+<script src="${rootPath}/static/js/random.js?2024-04-26-005"></script>
+<%@ include file="/WEB-INF/views/include/head.jspf"%>
 <title>Random Food Selector</title>
 </head>
 <body>
 	<div class="container">
-		<h1>랜덤돌림판</h1>
 		<div class="roulette-container">
 			<div class="roulette">
 				<div class="arrow"></div>
@@ -25,7 +28,7 @@
 					<li>아시안</li>
 					<li>분식</li>
 					<li>패스트푸드</li>
-				</ul>
+				</ul>   
 			</div>
 		<button id="randomButton">돌려</button>
 		</div>
@@ -33,9 +36,11 @@
 	<div class="selectfood">
 		<div>
 			<input readonly="readonly">
-			<input>
 		</div>
 		<button id="selectButton">돌려</button>
+		<div>
+			<input id="random" readonly="readonly">
+		</div>
 	</div>
 	
 </body>

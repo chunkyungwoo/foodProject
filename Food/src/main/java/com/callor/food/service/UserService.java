@@ -1,5 +1,6 @@
 package com.callor.food.service;
 
+import com.callor.food.models.FoodUserVO;
 import com.callor.food.models.FoodVO;
 import com.callor.food.models.UserVO;
 
@@ -10,5 +11,5 @@ public interface UserService {
 	
 	public FoodVO selectAll();
 	
-
+	public FoodUserVO createFoodUser(FoodUserVO foodUserVO);
 }

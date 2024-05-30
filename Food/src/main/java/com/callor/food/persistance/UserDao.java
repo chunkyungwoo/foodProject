@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Select;
 
+import com.callor.food.models.FoodUserVO;
 import com.callor.food.models.UserVO;
 
 public interface UserDao {
@@ -21,4 +22,5 @@ public interface UserDao {
 	public void create_user_table(String dumy);
 	public void create_role_table(String dumy);
 
+	public int insertFoodUser(FoodUserVO foodUserVO);
 }

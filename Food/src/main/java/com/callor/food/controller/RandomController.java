@@ -44,10 +44,10 @@ public class RandomController {
 	
 	@ResponseBody
 	@RequestMapping(value="/getCategory/{f_sort}")
-	public String getcategory(@PathVariable("f_sort") String f_sort) {
-		FoodVO foodVO = randomService.findById(f_sort);
-		if(foodVO == null) return "OK";
-		return null;
+	public List<FoodVO> getcategory(@PathVariable("f_sort") String f_sort) {
+		List<FoodVO> foodVO = randomService.findById(f_sort);
+		if(foodVO == null);
+		return foodVO;
 	}
 
 }

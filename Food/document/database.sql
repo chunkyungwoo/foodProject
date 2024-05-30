@@ -23,6 +23,8 @@ DROP TABLE tbl_food;
 
 DROP database foodDB;
 
+ALTER TABLE tbl_user
+modify m_password VARCHAR(125);
 
 CREATE TABLE tbl_fooduser(
 	f_fcode	BIGINT,
@@ -40,3 +42,4 @@ REFERENCES tbl_user(m_id);
 
 
 SELECT * FROM tbl_user;
+SELECT * FROM tbl_fooduser;

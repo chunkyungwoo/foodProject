@@ -72,40 +72,43 @@
   font-size: 16px;
   /* border-radius: 50%; */
   transform-origin: center center; /* 회전 축을 가운데로 조정 */
-	border-bottom: 2px solid white;
-	display: flex;
-    align-items: flex-end;
-}   
+}
 
 /* 각 항목의 위치를 조정합니다. */
 .food-list li:nth-child(1) {
-	transform: rotate(100deg) translateX(-73px) translateY(-75px) 
-	rotate(-0deg);
+  transform: rotate(100deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
 }
 
 .food-list li:nth-child(2) {
-  transform: rotate(150deg) translateX(-75px) translateY(-78px) rotate(-0deg);
+  transform: rotate(150deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
 }
 
 .food-list li:nth-child(3) {
-	transform: rotate(200deg) translateX(-78px) translateY(-79px) rotate(-0deg);
+  transform: rotate(200deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
 }
 
 .food-list li:nth-child(4) {
-  transform: rotate(250deg) translateX(-77px) translateY(-75px) rotate(-0deg);
+  transform: rotate(250deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
 }
 
 .food-list li:nth-child(5) {
-  transform: rotate(300deg) translateX(-78px) translateY(-74px) rotate(-0deg);
+  transform: rotate(300deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
 }
 
 .food-list li:nth-child(6) {
-  transform: rotate(350deg) translateX(-79px) translateY(-71px) rotate(-0deg)
+  transform: rotate(350deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
 }
 
 .food-list li:nth-child(7) {
-  transform: rotate(400deg) translateX(-76px) translateY(-70px) rotate(-0deg);
-} 
+  transform: rotate(400deg) translateX(-150px) translateY(-50px)
+    rotate(-0deg);
+}
 
 /* 원 안에 칸을 만들어 배치하기 위한 추가 스타일 */
 .food-cell {

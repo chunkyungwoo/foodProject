@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.callor.food.models.FoodUserVO;
 import com.callor.food.models.FoodVO;
 import com.callor.food.models.RoleVO;
 import com.callor.food.models.UserVO;
@@ -54,6 +55,13 @@ public class UserServiceImpl implements UserService{
 		}
 		userDao.insert(createUserVO);
 		roleDao.insertAll(roles);
+		return createUserVO;
+	}
+	@Override
+	@Transactional
+	public FoodUserVO createFoodUser(FoodUserVO foodUserVO) {
+		// TODO Auto-generated method stub
+		userDao.insertFoodUser(foodUserVO);
 		return null;
 	}
 	

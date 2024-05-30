@@ -5,8 +5,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.callor.food.models.FoodUserVO;
 import com.callor.food.models.UserVO;
 import com.callor.food.service.UserService;
 
@@ -28,9 +30,15 @@ public class UserController {
 	}
 	
 	@RequestMapping(value="/join",method=RequestMethod.POST)
-	public String join(@ModelAttribute UserVO userVO) {
-		
+	public String join(@ModelAttribute UserVO userVO, @RequestParam("f_foodname") String fCode) {
+		System.out.println("join test");
 		UserVO ret = userService.createUser(userVO);
+		
+		// FoodUserVO 객체 생성 및 필드 설정
+	    FoodUserVO foodUserVO = new FoodUserVO();
+	    foodUserVO.setF_fcode(fCode);
+	    foodUserVO.setF_fuserid(ret.getM_id());
+	    FoodUserVO ret2 = userService.createFoodUser(foodUserVO);
 		return "redirect:/user/login";
 	}
 	
